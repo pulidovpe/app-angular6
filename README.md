@@ -23,7 +23,7 @@ cd app-angular6
 
 npm install
 
-npm start
+ng serve
 ```
 ## Tasks / Lista de Tareas
 - [x] Inicializar repositorio
