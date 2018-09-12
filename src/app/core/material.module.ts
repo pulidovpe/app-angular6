@@ -2,44 +2,60 @@ import { NgModule } from "@angular/core";
 import { CommonModule } from '@angular/common';
 
 import {
-  MatButtonModule,
-  MatCardModule,
   MatDialogModule,
   MatSidenavModule,
-  MatInputModule,
-  MatTableModule,
-  MatToolbarModule,
+  MatButtonModule,
   MatMenuModule,
+  MatToolbarModule,
   MatIconModule,
-  MatProgressSpinnerModule
+  MatCardModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatDatepickerModule,
+  MatDatepicker,
+  MatNativeDateModule,
+  MatRadioModule,
+  MatSelectModule,
+  MatOptionModule,
+  MatSlideToggleModule,
 } from '@angular/material';
 
 @NgModule({
   imports: [
     CommonModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatCardModule,
-    MatInputModule,
     MatDialogModule,
     MatSidenavModule,
-    MatTableModule,
+    MatButtonModule,
     MatMenuModule,
+    MatToolbarModule,
     MatIconModule,
-    MatProgressSpinnerModule
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatOptionModule,
+    MatSlideToggleModule
   ],
   exports: [
     CommonModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatCardModule,
-    MatInputModule,
     MatDialogModule,
     MatSidenavModule,
-    MatTableModule,
+    MatButtonModule,
     MatMenuModule,
+    MatToolbarModule,
     MatIconModule,
-    MatProgressSpinnerModule
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatOptionModule,
+    MatSlideToggleModule
   ],
 })
 

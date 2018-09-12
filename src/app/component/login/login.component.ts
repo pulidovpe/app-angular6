@@ -24,8 +24,10 @@ export class LoginComponent implements OnInit {
       this.router.navigate(["user"]);
     } else {
       this.dialog.open(ErrorComponent,{ data: {
-        message:  "Your login information are incorrect!"
+        title: 'Angular Login Message',
+        message:  "Redirecting to form!"
       }});
+      this.router.navigate(["form"]);
     }
   }
 

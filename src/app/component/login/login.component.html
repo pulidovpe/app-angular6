@@ -11,20 +11,29 @@
               <mat-form-field class="example-full-width">
                 <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
               </mat-form-field>
+              <div ng-messages="login-form.username.$error">
+                <div ng-message="required">This is required.</div>
+              </div>
             </td>
           </tr><tr>
             <td>
               <mat-form-field class="example-full-width">
-                <input matInput placeholder="Password" [(ngModel)]="password"type="password" name="password" required>
+                <input matInput placeholder="Password" [(ngModel)]="password" type="password" name="password" required>
               </mat-form-field>
+              <div ng-messages="login-form.password.$error" role="alert">
+                <div ng-message="required">This is required.</div>
+              </div>
             </td>
           </tr>
         </table>
       </form>
-      <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+      <!-- <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner> -->
+      <!-- <button mat-raised-button color="warning">Forgot Password</button> -->
     </mat-card-content>
     <mat-card-actions>
       <button mat-raised-button (click)="login()" color="primary">Login</button>
+      <a mat-link routerLink="/register">Register</a>
     </mat-card-actions>
   </mat-card>
 </div>
+
